@@ -12,3 +12,9 @@ export const userInput = (payload) => {
     payload,
   };
 };
+
+export const openModel = () => {
+  return {
+    type: 'OPEN_MODAL',
+  };
+};
