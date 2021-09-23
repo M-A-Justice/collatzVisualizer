@@ -1,0 +1,10 @@
+Highest Priority
+----------------------------------------------------
+- Implement styling for App component pieces
+- Implement Styling for RandomButton component pieces
+- Implement Styling for IntegerSubmit
+
+Lowest Priority
+----------------------------------------------------
+- Implement api functionality for RandomButton
+- Implement api functionality for IntegerSubmit

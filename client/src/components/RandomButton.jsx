@@ -12,12 +12,12 @@ import {
 
 const RandomButton = () => {
   const dispatch = useDispatch();
+
   const handleClick = () => {
     const random = datatype.number();
-    // Input random number into Collatz function
     const series = collatz(random);
-    // Set result of function into state
     const data = [random, series];
+
     dispatch(updateSelection(data));
     // Post result of function to api
   };

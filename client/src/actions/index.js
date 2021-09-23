@@ -6,6 +6,9 @@ export const updateSelection = (payload) => {
   };
 };
 
-export const otherAction = () => {
-
+export const userInput = (payload) => {
+  return {
+    type: 'USER_INPUT',
+    payload,
+  };
 };
