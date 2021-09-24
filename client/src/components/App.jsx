@@ -2,6 +2,7 @@ import React from 'react';
 import RangeSlider from './RangeSlider';
 import Graph from './Graph';
 import MoreInfo from './MoreInfo';
+import Modal from './Modal';
 import IntegerSubmit from './IntegerSubmit';
 import RandomButton from './RandomButton';
 import {
@@ -16,6 +17,7 @@ import {
 
 const App = () => (
   <Container>
+    <Modal />
     <InfoColumns>
       <RangeSlider />
       <Graph />

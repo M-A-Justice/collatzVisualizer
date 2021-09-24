@@ -1,8 +1,12 @@
 Highest Priority
 ----------------------------------------------------
+- Implement Range Slider
+- Implement D3 Graph
 - Implement styling for App component pieces
 - Implement Styling for RandomButton component pieces
 - Implement Styling for IntegerSubmit
+- Implement Styling for MoreInfo component
+- Implement Styling for Modal component
 
 Lowest Priority
 ----------------------------------------------------
