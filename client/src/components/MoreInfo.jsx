@@ -1,6 +1,6 @@
 import React from 'react';
 import { useDispatch } from 'react-redux';
-import { openModel } from '../actions';
+import { openModal } from '../actions';
 import {
   ModalButton,
   MoreInfoText,
@@ -10,7 +10,7 @@ const MoreInfo = () => {
   const dispatch = useDispatch();
 
   const handleClick = () => {
-    dispatch(openModel());
+    dispatch(openModal());
   };
 
   return (
