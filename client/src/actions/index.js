@@ -18,3 +18,10 @@ export const openModal = () => {
     type: 'OPEN_MODAL',
   };
 };
+
+export const updateMinMax = (payload) => {
+  return {
+    type: 'MIN_MAX',
+    payload,
+  };
+};
