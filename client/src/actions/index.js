@@ -25,3 +25,17 @@ export const updateMinMax = (payload) => {
     payload,
   };
 };
+
+export const collatzMinMax = (payload) => {
+  return {
+    type: 'COLLATZ_MIN_MAX',
+    payload,
+  };
+};
+
+export const updateSelectedCollatz = (payload) => {
+  return {
+    type: 'UPDATE_COLLATZ',
+    payload,
+  };
+};
