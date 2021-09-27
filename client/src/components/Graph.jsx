@@ -1,5 +1,6 @@
 import React, { useRef, useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
+import _ from 'lodash';
 import collatz from '../../../server/scripts/script';
 import {
   collatzMinMax,
@@ -11,6 +12,7 @@ const Graph = () => {
   const selectedRange = useSelector((state) => state.currentSelection);
   const minMaxRange = useSelector((state) => state.minMax);
   const collatzRange = useSelector((state) => state.collatzMinMax);
+  const selectedCollatz = useSelector((state) => state.selectedCollatz);
   const d3Container = useRef(null);
 
   const sortedKeys = Object.keys(collatzRange).sort((a, b) => Number(a) - Number(b));
@@ -26,16 +28,18 @@ const Graph = () => {
     // post results to api
   }
 
+  const newSelectedCollatz = {};
+
+  for (let i = selectedRange[0]; i < selectedRange[1]; i += 1) {
+    newSelectedCollatz[`${i}`] = collatzRange[`${i}`];
+  }
+
+  if (!_.isEqual(selectedCollatz, newSelectedCollatz)) {
+    dispatch(updateSelectedCollatz(newSelectedCollatz));
+  }
+
   useEffect(
     () => {
-      const selectedCollatz = {};
-
-      for (let i = selectedRange[0]; i < selectedRange[1]; i += 1) {
-        selectedCollatz[`${i}`] = collatzRange[`${i}`];
-      }
-
-      dispatch(updateSelectedCollatz(selectedCollatz));
-
       // d3 code .....
     },
     [],
