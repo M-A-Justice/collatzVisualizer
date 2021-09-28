@@ -1,5 +1,6 @@
 Highest Priority
 ----------------------------------------------------
+- Reformat data for the D3 chart
 - Implement Range Slider
 - Implement D3 Graph
 - Implement styling for App component pieces

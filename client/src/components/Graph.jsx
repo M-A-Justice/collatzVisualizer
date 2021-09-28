@@ -40,7 +40,11 @@ const Graph = () => {
 
   useEffect(
     () => {
-      // d3 code .....
+      // if there is data and a d3 container
+      if () {
+        // execute d3 code
+        const svg = d3.select(d3Container.current);
+      }
     },
     [],
   );
